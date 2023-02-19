@@ -1,0 +1,467 @@
+<html lang="zh-CN">
+    <title>e【林之·IT】的主页</title>
+    <link rel="shortcut icon" href="https://linhao2023.github.io/media/avatar.jpg" type="image/x-icon">
+    <head>
+        <style>
+            :root {
+                --cbx-box-shadow: 0px 0px 0px 1px #c2c2c2;
+                --cbx-main-color: #2f00ff;
+                --cbx-hover-color: #83d2ff;
+            }
+            * {
+                margin: 0px;
+                padding: 0px;
+                user-select: none;
+            }
+            #title {
+                font-weight: 300;
+                font-size: 100px;
+                text-align: center;
+                margin-top: 200px;
+                color: var(--cbx-main-color);
+                margin-bottom: 200px;
+                text-shadow: 0px 0px 10px var(--cbx-main-color);
+            }
+            body {
+                background: url(https://tse3-mm.cn.bing.net/th/id/OIP-C.XatfFpQ8-ZQst-9d_ThNHQHaEK?w=310&h=180&c=7&r=0&o=5&pid=1.7) no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+                font-family: main;
+            }
+            #welcome {
+                text-align: center;
+                margin-bottom: 60px;
+                background: #ffffff80;
+                border-radius: 20px;
+                width: 80%;
+                max-width: 1050px;
+                margin: auto;
+                margin-bottom: 40px;
+                padding: 20px;
+                box-shadow: var(--cbx-box-shadow);
+            }
+            #skill {
+                display: block;
+                width: 100%;
+                max-width: 1200px;
+                margin: auto;
+            }
+            #skill div p {
+                display: inline-block;
+                border-radius: 20px;
+                padding: 10px;
+                margin-bottom: 10px;
+                background: #ffffff80;
+                box-shadow: var(--cbx-box-shadow);
+                width: 40%; 
+            }
+            #skill div p progress {
+                width: 100%;
+                max-width: 400px;
+            }
+            #desc {
+                display: block;
+                width: 100%;
+                margin: auto;
+            }
+            #desc div {
+                display: inline-block;
+                border-radius: 20px;
+                padding: 20px;
+                background: #ffffff80;
+                height: 100px;
+                margin-top: 20px;
+                box-shadow: var(--cbx-box-shadow);
+                margin: 10px;
+            }
+            #avatar {
+                margin-bottom: -100px;
+                border-radius: 1000px;
+            }
+            .name {
+                color: black;
+            }
+            #sites, #about {
+                text-align: center;
+                margin: auto;
+                max-width: 1200px;
+            }
+            #desc p {
+                display: inline-block;
+            }
+            #nav div:hover {
+                background: var(--cbx-hover-color);
+            }
+            #nav div {
+                display: inline-block;
+                border-radius: 20px;
+                padding: 15px;
+                background: #ffffff80;
+                height: 100px;
+                margin-top: 20px;
+                margin: 10px;
+                width: 180px;
+                max-width: 300px;
+                box-shadow: var(--cbx-box-shadow);
+            }
+            #nav, #findme {
+                display: block;
+                width: 100%;
+                margin: auto;
+            }
+            #findme div {
+                display: inline-block;
+                border-radius: 20px;
+                padding: 20px;
+                background: #ffffff80;
+                height: 50px;
+                margin-top: 20px;
+                margin: 10px;
+                width: 200px;
+                max-width: 300px;
+                box-shadow: var(--cbx-box-shadow);
+            }
+            @media (min-width: 900px) {
+                #findme div {
+                    transition: all .8s cubic-bezier(.65,.15,.37,1.19);
+                }
+                #findme div:hover {
+                    width: 120%;
+                    max-width: 300px;
+                }
+                #nav div {
+                    transition: all .8s cubic-bezier(.65,.15,.37,1.19);
+                }
+                #nav div:hover {
+                    width: 120%;
+                    max-width: 300px;
+                }
+            }
+            #findme div:hover {
+                background: var(--cbx-hover-color);
+            }
+            @media (max-width: 900px) {
+                buttons {
+                    visibility: hidden;
+                }
+            }
+            buttons {
+                position: fixed;
+                top: 10vh;
+                text-align: left;
+                font-size: 30px;
+            }
+            buttons div {
+                background-color: rgb(241, 241, 241);
+                width: 20px;
+                padding: 10px;
+                margin-bottom: 10px;
+                height: 50px;
+                border-radius: 0px 20px 20px 0px;
+                transition: width .3s;
+                box-shadow: 6px 0px 0px 0px cyan, var(--cbx-box-shadow) inset;
+            }
+            buttons div:hover {
+                width: 150px;
+                color: black;
+            }
+            #buttonsa span{
+                object-fit: cover;
+                width: 100%;
+                visibility: hidden;
+            }
+            div:hover #buttonsa span {
+                color: rgb(0, 0, 0);
+                font-weight: 500;
+                width: 100%;
+                visibility: inherit;
+                object-fit: cover;
+            }
+            a {
+                color: black;
+                text-decoration: none;
+            }
+            a:hover {
+                color: blue;
+            }
+            ::-webkit-scrollbar {
+              width: 8px;
+              height: 8px;
+            }
+            ::-webkit-scrollbar-track {
+              background-color: rgba(73, 177, 245, 0.2);
+              border-radius: 2em;
+            }
+            ::-webkit-scrollbar-thumb {
+              background-color: #49b1f5;
+              background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 75%, transparent 75%, transparent);
+              border-radius: 2em;
+            }
+            ::-webkit-scrollbar-corner {
+              background-color: transparent;
+            }
+            ::-moz-selection {
+              color: #fff;
+              background-color: #49b1f5;
+            }
+            body {
+              cursor: url(https://linhao2023.github.io/media/avatar.jpg), default;
+            }
+            a, img {
+              cursor: url(https://linhao2023.github.io/media/avatar.jpg), default;
+            }
+            #footer {
+                width: 80%;
+                margin: auto;
+                max-width: 1200px;
+                background: #ffffff80;
+                border-radius: 20px;
+                padding: 20px;
+                margin-top: 30px;
+                margin-bottom: 40px;
+                box-shadow: var(--cbx-box-shadow);
+            }
+            @media (min-width: 900px) {
+                header {
+                    visibility: hidden;
+                }
+            }
+            header {
+                display: block;
+                position: fixed;
+                background: rgb(241,241,241);
+                box-shadow: 0px 6px 0px 0px cyan;
+                width: 100%;
+                top: 0px;
+            }
+            header div {
+                display: inline-block;
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <header>
+        <div>
+            <a href="https://linhao2023.github.io/"><h2>
+                博客
+            </h2></a>
+        </div>
+        <div>
+            <a href="https://linhao2023.github.io/"><h2>
+                主页2
+            </h2></a>
+        </div>
+        <div>
+            <a href="https://github.com/linhao"><h2>
+                github
+            </h2></a>
+        </div>
+        <div>
+            <a href="https://linhao2023.github.io/authorqq"><h2>
+                QQ
+            </h2></a>
+        </div>
+        <div>
+            <a href="https://linhao2023.github.io/authorwechat"><h2>
+                微信
+            </h2></a>
+        </div>
+    </header>
+    <body>
+        <style>
+            @font-face {
+                font-family: main;
+                src: url(./font.woff2);
+                font-display: swap;
+            }
+        </style>
+        <div id="title">
+            【林之·IT】的主页
+        </div>
+        <div id="welcome">
+            <h1>
+                彼方为谁，无我有问，九月露湿，待君之前。<br>
+                鸣谢：https://ezgx.tk/
+            </h1>
+            <h1>
+                👋你好，我是
+            </h1>
+            <div id="name">
+                <h2>
+                    <div class="name">linzhi</div>
+                </h2>
+            </div>
+        </div>
+        <div id="desc">
+            <h1 id="about">关于我们</h1>
+            <center>
+                <div>
+                    <h2>
+                        是
+                    </h2>
+                    信息技术团队，团队官方，。
+                </div>
+                <div>
+                    <h2>
+                        成立于2022
+                    </h2>
+                    位于中国河南
+                </div>
+                <p>
+                    <img id="avatar" src="https://linhao2023.github.io/media/avatar.jpg" width="200px" height="200px">
+                </p>
+            </center>
+        </div>
+        <div id="skill">
+            <center>
+                <h1 id="sites">我们的业务qwq</h1>
+                <div>
+                    <p> 
+                        <label for="file">html：</label>
+                        <progress max="100" value="50"> 50% </progress>
+                    </p>
+                    <p>
+                        <label for="file">css：</label>
+                        <progress max="100" value="40"> 40% </progress>
+                    </p>
+                    <p> 
+                        <label for="file">扒站：</label>
+                        <progress max="100" value="50"> 50% </progress>
+                    </p>
+                    <p> 
+                        <label for="file">抄教程：</label>
+                        <progress max="100" value="80"> 80% </progress>
+                    </p>
+                    <p>
+                        <label for="file">整活：</label>
+                        <progress max="100" value="70"> 70% </progress>
+                    </p>
+                    <p>
+                        <label for="file">二次元：</label>
+                        <progress max="100" value="100"> 100% </progress>
+                    </p>
+                    <p>
+                        <label for="file">肝帝：</label>
+                        <progress max="100" value="60"> 60% </progress>
+                    </p>
+                    <p>
+                        <label for="file">官方：</label>
+                        <progress max="100" value="90"> 90% </progress>
+                    </p>
+                </div>
+            </center>
+        </div>
+        <div id="nav">
+            <center>
+                <h1 id="sites">我的站点</h1>
+                <a href="https://linhao2023.github.io/">
+                    <div>
+                        <h2>
+                            博客
+                        </h2>
+                        这里记录技术，生活.
+                    </div>
+                </a>
+                <a href="linzhistore.mysxl.cn">
+                    <div>
+                        <h2>
+                            林之store）
+                        </h2>
+                        store网【awa】
+                    </div>
+                </a>
+                <a href="https://github.com/linhao2023">
+                    <div>
+                        <h2>
+                            github
+                        </h2>
+                        用来部署各种东西
+                    </div>
+                </a>
+                <a href="https://linhao2023.github.io/link">
+                    <div>
+                        <h2>
+                            友链
+                        </h2>
+                        一些大佬！
+                    </div>
+                </a>
+            </center>
+        </div>
+        <div id="findme">
+            <center>
+            <h1>
+                哪里有我？
+            </h1>
+                <a href="https://github.com/linhao2023">
+                    <div>
+                        <h2>
+                            github
+                        </h2>
+                    </div>
+                </a>
+                <a href="https://linhao2023.github.io/authorqq">
+                    <div>
+                        <h2>
+                            QQ
+                        </h2>
+                    </div>
+                </a>
+                <a href="https://linhao2023.github.io/authorwechat">
+                    <div>
+                        <h2>
+                            微信
+                        </h2>
+                    </div>
+                </a>
+            </center>
+        </div>
+        <div id="footer">
+            <center>
+                <h1>
+                    2023 by ©<a href="https://linhao2023.github.io//">【林之·IT】</a>
+                </h1>
+                <h2>
+                    <a href="https://linhao2023.github.io/">官方网站</a>
+                </h2>
+            </center>
+        </div>
+        <buttons>
+            <div>
+                <a id="buttonsa" href="hhttps://linhao2023.github.io/">
+                    <span>
+                        博客
+                    </span>
+                </a>
+            </div>
+            <div>
+                <a id="buttonsa" href="https://b.echocbx.tk">
+                    <span>
+                        主页2
+                    </span>
+                </a>
+            </div>
+            <div>
+                <a id="buttonsa" href="https://github.com/ezgx">
+                    <span>
+                        github
+                    </span>
+                </a>
+            </div>
+            <div>
+                <a id="buttonsa" href="https://linhao2023.github.io/authorqq">
+                    <span>
+                        QQ
+                    </span>
+                </a>
+            </div>
+            <div>
+                <a id="buttonsa" href="https://linhao2023.github.io/authorwechat">
+                    <span>
+                        微信
+                    </span>
+                </a>
+            </div>
+        </buttons>
+    </body>
+</html>
